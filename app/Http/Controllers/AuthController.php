@@ -84,4 +84,23 @@ class AuthController extends Controller
             ], 400);
         }
     }
+
+    public function user(){
+        $user = User::orderBy('name', 'asc')
+        ->get();
+
+        if (count($user) > 0) {
+            return response()->json([
+                'success' => true,
+                'message' => 'List Point User !',
+                'data' => $user
+            ], 201);
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data Not Found !',
+                'data' => ''
+            ], 400);
+        }
+    }
 }

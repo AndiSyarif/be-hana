@@ -17,7 +17,16 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+//route auth
 $router->post('/register', 'AuthController@register');
 $router->post('/login', 'AuthController@login');
+$router->get('/user', 'AuthController@user');
+
+//route point
+$router->get('/index', 'PointController@index');
+$router->post('/store', 'PointController@store');
+$router->get('/show/{user_id}', 'PointController@show');
+$router->patch('/update/{user_id}', 'PointController@update');
+$router->delete('/destroy/{user_id}', 'PointController@destroy');
 
 
