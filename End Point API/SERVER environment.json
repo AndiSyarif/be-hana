@@ -1,0 +1,15 @@
+{
+	"id": "cf3607ab-c952-404c-82b2-7f8e59a67753",
+	"name": "SERVER HANA",
+	"values": [
+		{
+			"key": "URL",
+			"value": "https://be-hana.andis.tech",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-12-06T02:28:10.008Z",
+	"_postman_exported_using": "Postman/10.20.10"
+}
